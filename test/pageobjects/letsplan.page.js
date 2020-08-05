@@ -15,13 +15,15 @@ class LetsPlanPage extends Page {
         this.todayTab.click();
         this.inputTaskName.setValue(todayTaskName);
         this.enterButton.click(); 
+        browser.pause(3000)
     }
 
     enterLaterTaskName (laterTaskName) {
         browser.pause(3000)
         this.laterTab.click();
         this.inputTaskName.setValue(laterTaskName);
-        this.enterButton.click(); 
+        this.enterButton.click();
+        browser.pause(3000)
     }
 
     open () {
